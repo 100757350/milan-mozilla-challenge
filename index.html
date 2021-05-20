@@ -11,8 +11,110 @@
     <link rel="stylesheet" href="assets/styles.css">
 </head>
 
-<body>
+<body style="background-image: url(assets/img/background.svg);">
     <!-- Put HTML Here -->
+
+
+    <header class="pageborder">
+        <nav>
+            <div>
+                <a href=""><img src="assets\img\logo-relay.png" class="logo-relay"></a>
+            </div>
+            <div class="nav-top-right font-inter">
+                    <a href="" class="nav-link active-nav-link desktop-only">Home</a>
+                    <a href="" class="nav-link desktop-only">FAQ</a>
+                    <a href="" class="nav-link"><i class="fas fa-th"></i></a>
+                    <a href="" class="nav-link"><i class="far fa-user-circle"></i></a>
+            </div>
+        </nav>
+        <div class="mobileNav mobile-only font-metropolis">
+            <div id="menubutton">
+                Menu <i class="fas fa-angle-down"></i>
+            </div>
+            <div id="mobileMenu" style="display:none">
+                <a> Home </a>
+                <a> FAQ </a>
+            </div>
+        </div>
+    </header>
+    <main>
+       <!-- <img src="assets\img\background.svg" class="background">-->
+        <div class="alias-manager-heading">
+            <div class="alias-manager-heading-left"><h1 class="font-metropolis"> Manage your Relay aliases</h1></div>
+            <div class="alias-manager-heading-right desktop-only"><h2 class="font-metropolis">4&nbsp</h2><h3 class="font-inter"><span style="font-weight: normal">remaining aliases</span></h3></div>
+        </div>
+    
+         
+    
+        <button class="font-metropolis generate-new-button" type="button">
+            + Generate New Alias
+        </button>
+
+        <div class="alias-manager-heading-right mobile-only"><h2 class="font-metropolis">4&nbsp</h2><h3 class="font-inter"><span style="font-weight: normal">remaining aliases</span></h3></div>
+
+         
+        
+        <div class="add-account">
+            <div class="add-account-name desktop-only"><input class="font-inter grayed" type="text" id="addname" name="addname" placeholder="Add account name "><i class="fas fa-pen grayed"></i></div>
+            <div class="forwarding-toggle font-inter grayed">forwarding&nbsp<i class="fas fa-toggle-on" style="color:#3782e5; cursor: pointer"></i></div>
+        </div>
+        
+        <div class="details-parent">
+            <div class="email-component">
+                <div class="stacked email-component-name">
+                    <h3 class="font-metropolis">hd8jw3k1b@relay.firefox.com&nbsp<i class="far fa-copy"></i></h3>
+                    <button class="font-metropolis grayed" id='expandbutton'>Show Details <i class="fas fa-angle-down"></i></button>
+                </div>
+                <div class="stacked desktop-only">
+                    <h2 class="font-metropolis faded">0</h2>
+                    <h3 style="font-weight: normal" class="font-metropolis faded">Blocked</h3>
+                </div>
+                <div class="stacked desktop-only">
+                    <h2 class="font-metropolis">0</h2>
+                    <h3 style="font-weight: normal" class="font-metropolis grayed">Forwarded</h3>
+                </div>
+            </div>
+
+            <div id="details" class="font-metropolis" style="display:none">
+                <div class="stacked mobile-only">
+                    <h2 class="font-metropolis faded">0</h2>
+                    <h3 style="font-weight: normal" class="font-metropolis faded">Blocked</h3>
+                </div>
+                <div class="stacked mobile-only">
+                    <h2 class="font-metropolis">0</h2>
+                    <h3 style="font-weight: normal" class="font-metropolis grayed">Forwarded</h3>
+                </div>
+
+                <div class="stacked">
+                    <p class="grayed">Created: </p>
+                    <p>October 01, 2020</p>
+                </div>
+                <div class="stacked desktop-only">
+                    <p class="grayed">Forward emails to</p>
+                    <p>john.doe@mozilla.com</p> 
+                </div>
+                <div class="delete-button-parent">
+                    <button class="font-metropolis delete-button" type="button">
+                        Delete
+                    </button>                    
+                </div>
+
+            </div>
+        </div>
+    </div>     
+    
+        <p class="additional-info font-inter">Firefox Relay supports email forwarding (including attachments) of email up to 150KB in size</p>    
+    </main>
+
+    <footer class="pageborder font-inter">
+        <div class=footer-icon>
+            <a href=""><img src="assets\img\logo-mozilla.svg" alt=""></a>
+        </div>
+            <a href="" class="nav-link">Privacy</a>
+            <a href="" class="nav-link">Relay</a>
+            <a href="" class="nav-link">Legal</a>
+            <a href="" class="nav-link"><i class="fab fa-github"></i></a>
+    </footer>
     
     <!-- 
         Font Awesome v5 Free - See https://fontawesome.com/start for more info
